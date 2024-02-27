@@ -38,7 +38,7 @@ const ProjectList = [
     skills: ["React,", "CSS,", "Animations"],
     features: [
       "Match identical pairs of images in a grid",
-      "Animations when there is a match/no match",
+      "Flip animation when cards don't match",
       "Notify user when game is over",
       "Play Again button - resets the game",
     ],
@@ -51,8 +51,8 @@ const ProjectList = [
     features: [
       "Game of 'X's and 'O's",
       "Notify Player's turn",
-      "Notify double clicking is not allowed",
-      "Notify game winner or if it's a draw",
+      "Notify 'double clicking' is not allowed",
+      "Notify who's the winner or if it's a draw",
       "Reset button to play again",
     ],
     gitLink: "https://github.com/gail-lobo/TicTacToe",
