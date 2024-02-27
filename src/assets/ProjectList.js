@@ -74,7 +74,7 @@ const ProjectList = [
   {
     name: "Portfolio",
     image: Portfolio,
-    skills: ["React,", "CSS,", "Animations"],
+    skills: ["React,", "CSS,", "Animations,","Material UI"],
     features: [
       "Showcases my skills, projects, education and work experience",
       "Navigable and Responsive",
