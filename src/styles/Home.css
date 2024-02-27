@@ -1,0 +1,107 @@
+.home {
+  width: 100%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  color: #3e497a;
+}
+
+.about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #21325e;
+  color: #f0f0f0;
+}
+
+.about h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  color: #e9d35b;
+  height: 50px;
+}
+
+.about .prompt {
+  width: 90%;
+  font-size: 30px;
+  
+}
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: white;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.skills h1 {
+  color: #3e497a;
+  margin: 0.25em 0;
+  font-size: 50px;
+}
+
+.skills p {
+  font-size: 25px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .about h2 {
+    font-size: 2em;
+  }
+
+  .about .prompt {
+    width: 90%;
+    font-size: 1.2em;
+  }
+
+  .prompt svg {
+    font-size: 1.5em;
+  }
+
+  .skills h1 {
+    font-size: 2em;
+  }
+
+  .skills p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about h2 {
+    font-size: 1.5em;
+  }
+
+  .about .prompt {
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .prompt svg {
+    font-size: 1.8em;
+  }
+
+  .skills{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .skills h1 {
+    font-size: 1.8em;
+  }
+
+  .skills p {
+    font-size: 1em;
+  }
+}

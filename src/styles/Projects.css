@@ -1,0 +1,158 @@
+.projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projects .projectTitle {
+  text-align: center;
+  color: #3e497a;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.projectList {
+  width: 95vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap:0.8em;
+  padding: 0 0 1em 0;
+}
+
+/* MENU ITEM STYLING */
+
+.projectItem {
+  border-radius: 15px;
+  width: 400px;
+  height: 335px;
+  width: 300px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
+}
+.projectItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.projectItem .bgImage {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 240px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectItem h2 {
+  font-size: 18px;
+}
+
+.gitIcon a{
+  text-decoration: none;
+}
+.gitIcon svg{
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.gitIcon svg:hover{
+  transform: scale(1.05);
+} 
+
+.gitIcon p{
+  margin: 0px;
+  font-size: 12px;
+  padding-bottom: 0.7em;
+  color: black;
+}
+
+.projects h1{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card{
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s ease;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.frontEnd{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.skill{
+  font-size: 14px;
+}
+
+.backEnd{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.features{
+  text-align: left; 
+  padding: 0.5em;
+}
+
+.featuresTitle{
+  font-weight: bold;
+}
+
+.featuresContent{
+  font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+  
+  .projectItem .bgImage{
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width:480px){
+  .projectList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectItem{
+    height: 310px;
+    width: 280px;
+    margin: 15px 0;
+  }
+
+  .projectItem .bgImage{
+    height: 220px;
+    width: 280px;
+  }
+
+}
