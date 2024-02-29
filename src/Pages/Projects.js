@@ -1,29 +1,86 @@
-import React from "react";
-import ProjectItem from "../Components/ProjectItem";
-import ProjectList from "../assets/ProjectList";
-import "../styles/Projects.css";
+import Portfolio from "../assets/Portfolio.png";
+import EmployeeManagement from "../assets/EmployeeManagement.png";
+import TicTacToe from "../assets/TicTacToe.png";
+import PourMeAGlass from "../assets/PourMeAGlass.png";
+import MemoryGame from "../assets/MemoryGame.png";
+import Pawz from "../assets/Pawz.png";
 
-function Projects() {
-  return (
-    <div className="projects">
-      <h1>School & Personal Projects</h1>
-      <div className="projectList">
-        {ProjectList.map((project, idx) => {
-          return (
-            <ProjectItem
-              key={idx}
-              id={idx}
-              name={project.name}
-              image={project.image}
-              skills={project.skills}
-              gitLink={project.gitLink}
-              features={project.features}
-            />
-          );
-        })}
-      </div>
-    </div>
-  );
-}
+const ProjectList = [
+  {
+    name: "Pawz: Pet Supplies eComm App",
+    image: Pawz,
+    skills: ["MERN Stack,", "Stripe Payment Integration"],
+    features: [
+      "Responsive app design",
+      "Categorization and search functionality",
+      "User registration and login",
+      "Dynamic cart updates",
+      "Checkout form integrated with Stripe Payment Gateway",
+      "Admin portal for order and product management",
+    ],
+    gitLink: "https://github.com/gail-lobo/Pawz",
+  },
+  {
+    name: "Pour Me A Glass, Please!",
+    image: PourMeAGlass,
+    skills: ["React,", "REST API,", "Axios library,", "CSS"],
+    features: [
+      "Responsive design optimized for various screen sizes",
+      "Intuitive filtering and search options for beverages",
+      "Detailed recipe information on beverage detail pages",
+      "Seamless navigation between different sections of the app",
+    ],
+    gitLink: "https://github.com/gail-lobo/PourMeAGlass",
+  },
+  {
+    name: "Memory Game",
+    image: MemoryGame,
+    skills: ["React,", "CSS,", "Animations"],
+    features: [
+      "Engaging gameplay: Match identical pairs of images in a grid",
+      "Interactive flip animation when cards do not match",
+      "Clear notification when the game ends",
+      "'Play Again' button to restart the game",
+    ],
+    gitLink: "https://github.com/gail-lobo/MemoryGame",
+  },
+  {
+    name: "Tic Tac Toe",
+    image: TicTacToe,
+    skills: ["React,", "CSS"],
+    features: [
+      "Classic 'X's and 'O's gameplay",
+      "Informative prompts for player turns and prohibited actions",
+      "Clear indication of the winner or a draw",
+      "Reset button for easy replayability",
+    ],
+    gitLink: "https://github.com/gail-lobo/TicTacToe",
+  },
+  {
+    name: "Employee Management",
+    image: EmployeeManagement,
+    skills: ["React,", "JSON-Server,", "Bootstrap,", "CSS"],
+    features: [
+      "Efficient employee details management with navigable interface",
+      "View employee information",
+      "Create new employee profiles",
+      "Update employee details",
+      "Validation mechanisms to handle incorrect data entries",
+      "Secure deletion of employee records",
+    ],
+    gitLink: "https://github.com/gail-lobo/EmployeeManagement",
+  },
+  {
+    name: "Portfolio",
+    image: Portfolio,
+    skills: ["React,", "CSS,", "Animations,", "Material UI"],
+    features: [
+      "Showcase of skills, projects, education, and work experience",
+      "Seamless navigation and responsive design for optimal user experience",
+      "Direct links to GitHub, LinkedIn, and Email for easy contact",
+    ],
+    gitLink: "https://github.com/gail-lobo/Portfolio",
+  },
+];
 
-export default Projects;
+export default ProjectList;
